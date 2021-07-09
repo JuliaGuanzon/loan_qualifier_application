@@ -33,7 +33,8 @@ def load_csv(csvpath):
 
 
 
-def save_csv(csvpath, data, header=None):
+def save_csv(csvpath, data, header):
+    header = ["Lender", "Max Loan Amount", "Max LTV", "Max DTI", "Min Credit Score", "Interest Rate"]
     """Saves the CSV file from path provided.
 
     Args:
@@ -44,6 +45,5 @@ def save_csv(csvpath, data, header=None):
     """
     with open(csvpath, "w", newline="") as csvfile:
         csvwriter = csv.writer(csvfile, delimiter=',')
-        if header:
-            csvwriter.writerow(header)
+        csvwriter.writerow(header)
         csvwriter.writerows(data)
