@@ -32,12 +32,13 @@ def load_csv(csvpath):
 
 def save_csv(csvpath, data, header):
     header = ["Lender", "Max Loan Amount", "Max LTV", "Max DTI", "Min Credit Score", "Interest Rate"]
-    """Saves the CSV file from path provided.
+    """ J.Guanzon Comment-
+    Saves the CSV file from path provided.
 
     Args:
         csvpath (Path): The CSV file path.
         data (list of lists): A list of the rows of data for the CSV file.
-        header (list): A header for the csv to clearly label values.
+        header (list): A header for the csv to clearly label what the values are.
     
     Return:
         A csv file with qualifying loans clearly labeled.
