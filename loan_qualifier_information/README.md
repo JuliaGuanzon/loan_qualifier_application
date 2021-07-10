@@ -41,13 +41,13 @@ This section should include screenshots, code blocks, or animations showing how 
 
 This section should include screenshots, code blocks, or animations explaining how to use your project.
 
-![Opening the Repository](opening_repo_file.png)
+![Opening the Repository](images\opening_repo_file.PNG)
 
-![Using the Application](entering_borrower_info.png)
+![Using the Application](images\entering_borrower_info.PNG)
 
-![Saving the Qualifying Loans List](opening_qualifying_loan_list.png)
+![Saving the Qualifying Loans List](images\open_qualifying_loan_list.PNG)
 
-![How to Open the Qualifying Loans List CSV](qualifying_loan_list.png)
+![How to Open the Qualifying Loans List CSV](images\qualifying_loan_list.PNG)
 
 ---
 
