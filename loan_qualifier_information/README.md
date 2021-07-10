@@ -136,7 +136,7 @@ Next, the user will be prompted to fill in the following criteria information. W
 
 ![entering_borrower_info](https://user-images.githubusercontent.com/84649228/125153522-2a907e80-e109-11eb-96e5-a9cb23dccd99.PNG)
 
-For a user to see the list of loans they qualified for, the user will need to open the data data file and command the opening of the file in the terminal. The file is saved as qualifying_loans.csv.
+The user will be give the file path to look at the file. For a user to see the list of loans they qualified for, the user will need to open the data data file and command the opening of the file in the terminal. The file is saved as qualifying_loans.csv.
 
 ```
 cd data
@@ -144,7 +144,7 @@ cd data
 explorer qualifying_loans.csv
 ```
 
-![open_qualifying_loan_list](https://user-images.githubusercontent.com/84649228/125153551-527fe200-e109-11eb-8c65-28d2978d2a0d.PNG)
+![open_qualifying_loan_list](https://user-images.githubusercontent.com/84649228/125177512-48092b00-e191-11eb-95cc-6389b2875005.PNG)
 
 Below is the list of loans a user has qualified for based on their information and the criteria of the loan.
 
