@@ -56,28 +56,37 @@ This section should include screenshots, code blocks, or animations showing how 
 
 To use the loan qualifier application, the repository will need to be cloned from GitHub and into a local repository.
 
-In the loan_qualifier_application folder, enter into the loan_qualifier_information. Enter into the dev environment by commanding 
+In the loan_qualifier_application folder, enter into the loan_qualifier_information. Enter into the dev environment by commanding: 
 
 ```
  conda activate dev
- 
 ```
-Next you will need to use the code
+![opening_repo_file](https://user-images.githubusercontent.com/84649228/125153554-56136900-e109-11eb-8da5-0ce748334148.PNG)
+
+Next you will need to use the code:
 
 ```
 python app.py
-
 ```
 to run the file.
 
+The file path necessary to use this application is *./data/daily_rate_sheet.csv*
 
-
-![opening_repo_file](https://user-images.githubusercontent.com/84649228/125153554-56136900-e109-11eb-8da5-0ce748334148.PNG)
+Next, the user will be prompted to fill in the following criteria information. When the user is finished inputting the information, they will be asked "Would you like to save?" This can be answered with a "y" or "n".
 
 ![entering_borrower_info](https://user-images.githubusercontent.com/84649228/125153522-2a907e80-e109-11eb-96e5-a9cb23dccd99.PNG)
 
+For a user to see the list of loans they qualified for, the user will need to open the data data file and command the opening of the file in the terminal. The file is saved as qualifying_loans.csv.
+
+```
+cd data
+
+explorer qualifying_loans.csv
+```
 
 ![open_qualifying_loan_list](https://user-images.githubusercontent.com/84649228/125153551-527fe200-e109-11eb-8c65-28d2978d2a0d.PNG)
+
+As seen below, this is the list of loans a user has qualified for based on their information and the criteria of the loan.
 
 ![qualifying_loan_list](https://user-images.githubusercontent.com/84649228/125153556-590e5980-e109-11eb-84d8-adae7a7eaf23.PNG)
 
