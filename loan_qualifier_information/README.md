@@ -8,15 +8,15 @@ The loan qualifier application is a helpful tool for people who are looking to a
 
 In order for this program to run, this application must be used in either Git Bash or VS Code, as it was written in Python. To run the program, a programmer must have Anaconda/Python installed on their computer. To ensure the code works, please open the file in a dev environment. Since this is a modular application, parts of this application are referenced in the main file and are hosted on a different files.
 
-There were many libraries used that were imported to help execute the code. They are as follows: sys, fire, questionary, Pathlib.
-
-```
 **Operating Systems**
 Git Bash
+
 Visual Studio Code
+
 conda 4.10.3
+
 python 3.7
-```
+
 
 ---
 
@@ -25,6 +25,7 @@ python 3.7
 As mentioned above, to ensure that there are no errors when running this application, the user or programmer must use Git Bash or Visual Studio Code to access the application file. The operating systems and program versions are mentioned above and are highly recommended when running the program.
 
 Additional installs are needed to access certain libraries.
+
 
 
 
@@ -40,6 +41,7 @@ This section should include screenshots, code blocks, or animations showing how 
 
 This section should include screenshots, code blocks, or animations explaining how to use your project.
 
+![sdif](entering_borrower_info.PNG)
 ---
 
 ## Contributors
