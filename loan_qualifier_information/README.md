@@ -76,7 +76,25 @@ This portion of code prompts users to fill in their information. By using questi
 ```
 The next portion of code determines which loans a user can qualify for. It takes the information gathered, and it calculates the monthly debt to income and loan to value ratios, and it filters the loan list to determine the qualifying loans.
 
-![find_qualifying_loans](https://user-images.githubusercontent.com/84649228/125153670-46e0eb00-e10a-11eb-86f4-afff1ccb1d58.PNG)
+```
+def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_value):
+
+    monthly_debt_ratio = calculate_monthly_debt_ratio(debt, income)
+    print(f"The monthly debt to income ratio is {monthly_debt_ratio:.02f}")
+    
+    loan_to_value_ratio = calculate_loan_to_value_ratio(loan, home_value)
+    print(f"The loan to value ratio is {loan_to_value_ratio:.02f}.")
+
+    bank_data_filtered = filter_max_loan_size(loan, bank_data)
+    bank_data_filtered = filter_credit_score(credit_score, bank_data_filtered)
+    bank_data_filtered = filter_debt_to_income(monthly_debt_ratio, bank_data_filtered)
+    bank_data_filtered = filter_loan_to_value(loan_to_value_ratio, bank_data_filtered)
+
+    print(f"Found {len(bank_data_filtered)} qualifying loans")
+
+    return bank_data_filtered
+
+```
 
 The run function runs the entire application, as seen below.
 ![run_function](https://user-images.githubusercontent.com/84649228/125153673-48aaae80-e10a-11eb-9a08-e7502b2033c0.PNG)
