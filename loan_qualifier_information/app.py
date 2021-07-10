@@ -127,7 +127,7 @@ def save_qualifying_loans(qualifying_loans):
         qualifying_loans (list of lists): The qualifying bank loans.
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
-    # J.Guanzon Comment- Used questionary.confirm to prompt a "yes/no" response. This code saves the file a user produces.
+    # J.Guanzon Comment- Used questionary.confirm to prompt a "yes/no" response. By saying "y" to the prompt, the user can save the file, and the program will advise the location of the file.
     csvpath = questionary.confirm("Would you like to save?").ask()
     csvpath = Path('./data/qualifying_loans.csv')
     header = ["Lender", "Max Loan Amount", "Max LTV", "Max DTI", "Min Credit Score", "Interest Rate"]
