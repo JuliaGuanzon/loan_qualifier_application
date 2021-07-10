@@ -1,6 +1,6 @@
 # Loan Qualifier Application
 
-The loan qualifier application is a helpful tool for people who are looking to apply for a loan. This application is useful to any user as it is an interactive application that gathers qualifying loans for each user's circumstance. The best feature in this program is the user's ability to save the loans they have qualified for in a spreadsheet. It saves the user time by creating a list of loans where the bank's borrowing criteria is met (ie. debt-to-income, loan-to-value, minimum credit score, maximum loan amount) and give the user the ability to keep the list. This enhancement to the application will make it efficient for any user to look for a loan.
+The loan qualifier application is a helpful tool for people who are looking to apply for a loan. This application is useful to any user as it is an interactive application that gathers qualifying loans for each user's circumstance. The best feature in this program is the user's ability to save the loans they have qualified for in a spreadsheet. It saves the user time by creating a list of loans where the bank's borrowing criteria is met (ie. debt-to-income, loan-to-value, minimum credit score, maximum loan amount) and gives the user the ability to keep the list. This enhancement to the application will make it efficient for any user looking to borrow a loan.
 
 ---
 
@@ -39,7 +39,7 @@ Additional installs are needed before running the program.
 
 ## Examples
 
-This is a modular application, therefore parts of this application are referenced in the main file and are hosted on different files. The code below pulls these outside files that contain the code that helps us run the app.py file. It also includes imports that help in running some of the functions in the file. 
+This is a modular application, therefore parts of this application are referenced in the main file and are hosted in different files. The code below pulls these outside files that contain the code that help run the app.py file. It also includes imports that help run functions in the file. 
 
 ```
 import sys
@@ -59,11 +59,11 @@ from qualifier.filters.credit_score import filter_credit_score
 from qualifier.filters.debt_to_income import filter_debt_to_income
 from qualifier.filters.loan_to_value import filter_loan_to_value
 ```
-The lines of code seen in the picture below tell us that the user must type in the file they chose to use. By typing the file name correctly, it will find and open the file the user needs. If the file name is not correctly entered or does not exist, then the application will tell the user the file was not found.
+In the block of code seen in the picture below, the user must type in the file they chose to use. By typing the file name correctly, it will find and open the file the user needs. If the file name is not correctly entered or does not exist, then the application will notify the user that the file was not found.
 
 ![load_bank_data](https://user-images.githubusercontent.com/84649228/125153667-4183a080-e10a-11eb-990d-479986cfe059.PNG)
 
-This portion of code prompts users to fill in their information. By using questionary, we are able to ask open-ended questions and take the data and compare the information against the criteria for loans. The information a user provides must be a numerical value in order for our application to calculate debt-to-income and loan-to-value.
+This portion of code prompts users to fill in their information. By using questionary, users are asked open-ended questions, and the program will take that data and compare the information against the criteria for loans. The information a user provides must be a numerical value in order for the application to calculate debt-to-income and loan-to-value.
 
 ```
     credit_score = questionary.text("What's your credit score?").ask()
@@ -78,7 +78,7 @@ This portion of code prompts users to fill in their information. By using questi
     loan_amount = float(loan_amount)
     home_value = float(home_value)
 ```
-The next portion of code determines which loans a user is qualify for. It takes the information gathered and it calculates the monthly debt-to-income and loan-to-value ratios. Then it filters the loan list to determine the qualifying loans based on user information.
+The next portion of code determines which loans a user is qualified for. It takes the information gathered and it calculates the monthly debt-to-income and loan-to-value ratios. Next, it filters the loan list to determine the qualifying loans based on user information.
 
 ```
 def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_value):
@@ -100,11 +100,11 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
 ```
 
-The run function runs the application for saving_qualifying_loans, as seen below.
+The run function runs the application to narrow down the qualifying loans and returns the information as saving_qualifying_loans, as seen below.
 
 ![run_function](https://user-images.githubusercontent.com/84649228/125153673-48aaae80-e10a-11eb-9a08-e7502b2033c0.PNG)
 
-The saving_qualifying_loans function allow for the saving of the qualifying loan list file. It prompts the user to either save the file or to decline saving the loan list.
+The saving_qualifying_loans function allows for the saving of the qualifying loan list file. It prompts the user to either save the file or to decline saving the loan list.
 
 ![save_qualifying_loans](https://user-images.githubusercontent.com/84649228/125153674-4b0d0880-e10a-11eb-9616-89be136651ac.PNG)
 
