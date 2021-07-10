@@ -24,11 +24,12 @@ python 3.7
 
 As mentioned above, to ensure that there are no errors when running this application, the user or programmer must use Git Bash or Visual Studio Code to access the application file. The operating systems and program versions are mentioned above and are highly recommended when running the program.
 
-Additional installs are needed to access certain libraries.
+Additional installs are needed before running the program.
 
-
-
-
+```python
+  pip install fire
+  pip install questionary
+```
 ---
 
 ## Examples
@@ -53,7 +54,18 @@ This section should include screenshots, code blocks, or animations showing how 
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+To use the loan qualifier application, the repository will need to be cloned from GitHub and into a local repository.
+
+In the loan_qualifier_application folder, enter into the loan_qualifier_information. Enter into the dev environment by commanding 
+``` conda activate dev
+```
+Next you will need to use the code
+
+```python app.py
+```
+to run the file.
+
+
 
 ![opening_repo_file](https://user-images.githubusercontent.com/84649228/125153554-56136900-e109-11eb-8da5-0ce748334148.PNG)
 
