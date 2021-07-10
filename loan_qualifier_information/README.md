@@ -37,8 +37,24 @@ Additional installs are needed before running the program.
 
 Since this is a modular application, we need to pull files that contain the code that helps us run the app.py file. we also need to import the following to help us run some of the functions in the file.
 
-![imports_and_from_qualifiers](https://user-images.githubusercontent.com/84649228/125153665-3892cf00-e10a-11eb-8cce-222aeaf5e0de.PNG)
+```
+import sys
+import fire
+import questionary
+from pathlib import Path
 
+from qualifier.utils.fileio import load_csv, save_csv
+
+from qualifier.utils.calculators import (
+    calculate_monthly_debt_ratio,
+    calculate_loan_to_value_ratio,
+)
+
+from qualifier.filters.max_loan_size import filter_max_loan_size
+from qualifier.filters.credit_score import filter_credit_score
+from qualifier.filters.debt_to_income import filter_debt_to_income
+from qualifier.filters.loan_to_value import filter_loan_to_value
+```
 The lines of code seen in the picture below tell us that the user must type in the file they chose to use. By typing the file name correctly, it will open the file to use to find a qualifying loan. If the file name is not correctly entered, then the application will tell the user the file was not found.
 
 ![load_bank_data](https://user-images.githubusercontent.com/84649228/125153667-4183a080-e10a-11eb-990d-479986cfe059.PNG)
@@ -58,16 +74,15 @@ This portion of code prompts users to fill in their information. By using questi
     loan_amount = float(loan_amount)
     home_value = float(home_value)
 ```
-
+The next portion of code determines which loans a user can qualify for. It takes the information gathered, and it calculates the monthly debt to income and loan to value ratios, and it filters the loan list to determine the qualifying loans.
 
 ![find_qualifying_loans](https://user-images.githubusercontent.com/84649228/125153670-46e0eb00-e10a-11eb-86f4-afff1ccb1d58.PNG)
+
+The run function runs the entire application, as seen below.
 ![run_function](https://user-images.githubusercontent.com/84649228/125153673-48aaae80-e10a-11eb-9a08-e7502b2033c0.PNG)
+
+The function below saves the qualifying loan list to a csv file for the user to view and keep.
 ![save_qualifying_loans](https://user-images.githubusercontent.com/84649228/125153674-4b0d0880-e10a-11eb-9616-89be136651ac.PNG)
-![def_load_csv](https://user-images.githubusercontent.com/84649228/125153725-97584880-e10a-11eb-9cec-f52e2b355c0b.PNG)
-![def_save_csv](https://user-images.githubusercontent.com/84649228/125153727-9b846600-e10a-11eb-916a-c6712fc2b86f.PNG)
-
-
-
 
 
 ---
@@ -83,7 +98,7 @@ In the loan_qualifier_application folder, enter into the loan_qualifier_informat
 ```
 ![opening_repo_file](https://user-images.githubusercontent.com/84649228/125153554-56136900-e109-11eb-8da5-0ce748334148.PNG)
 
-Next you will need to use the code:
+Next, use the code:
 
 ```
 python app.py
