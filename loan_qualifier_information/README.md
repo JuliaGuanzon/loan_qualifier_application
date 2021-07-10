@@ -57,11 +57,16 @@ This section should include screenshots, code blocks, or animations showing how 
 To use the loan qualifier application, the repository will need to be cloned from GitHub and into a local repository.
 
 In the loan_qualifier_application folder, enter into the loan_qualifier_information. Enter into the dev environment by commanding 
-``` conda activate dev
+
+```
+ conda activate dev
+ 
 ```
 Next you will need to use the code
 
-```python app.py
+```
+python app.py
+
 ```
 to run the file.
 
