@@ -9,6 +9,7 @@ The loan qualifier application is a helpful tool for people who are looking to a
 In order for this program to run, this application must be used in either Git Bash or VS Code, as it was written in Python. To run the program, a programmer must have Anaconda/Python installed on their computer. To ensure the code works, please open the file in a dev environment. Since this is a modular application, parts of this application are referenced in the main file and are hosted on a different files.
 
 **Operating Systems**
+
 Git Bash
 
 Visual Studio Code
@@ -34,12 +35,31 @@ Additional installs are needed before running the program.
 
 ## Examples
 
-This section should include screenshots, code blocks, or animations showing how your project works.
+Since this is a modular application, we need to pull files that contain the code that helps us run the app.py file. we also need to import the following to help us run some of the functions in the file.
 
 ![imports_and_from_qualifiers](https://user-images.githubusercontent.com/84649228/125153665-3892cf00-e10a-11eb-8cce-222aeaf5e0de.PNG)
 
+The lines of code seen in the picture below tell us that the user must type in the file they chose to use. By typing the file name correctly, it will open the file to use to find a qualifying loan. If the file name is not correctly entered, then the application will tell the user the file was not found.
+
 ![load_bank_data](https://user-images.githubusercontent.com/84649228/125153667-4183a080-e10a-11eb-990d-479986cfe059.PNG)
-![get_applicant_data](https://user-images.githubusercontent.com/84649228/125153669-43e5fa80-e10a-11eb-8065-8caa0ddce7f2.PNG)
+
+This portion of code prompts users to fill in their information. By using questionary, we are able to ask open-ended questions and take the data and compare the information against the criteria for loans. The information a user provides must be a number in order for our application to calculate debt to income and loan to value.
+
+```
+    credit_score = questionary.text("What's your credit score?").ask()
+    debt = questionary.text("What's your current amount of monthly debt?").ask()
+    income = questionary.text("What's your total monthly income?").ask()
+    loan_amount = questionary.text("What's your desired loan amount?").ask()
+    home_value = questionary.text("What's your home value?").ask()
+
+    credit_score = int(credit_score)
+    debt = float(debt)
+    income = float(income)
+    loan_amount = float(loan_amount)
+    home_value = float(home_value)
+```
+
+
 ![find_qualifying_loans](https://user-images.githubusercontent.com/84649228/125153670-46e0eb00-e10a-11eb-86f4-afff1ccb1d58.PNG)
 ![run_function](https://user-images.githubusercontent.com/84649228/125153673-48aaae80-e10a-11eb-9a08-e7502b2033c0.PNG)
 ![save_qualifying_loans](https://user-images.githubusercontent.com/84649228/125153674-4b0d0880-e10a-11eb-9616-89be136651ac.PNG)
@@ -86,7 +106,7 @@ explorer qualifying_loans.csv
 
 ![open_qualifying_loan_list](https://user-images.githubusercontent.com/84649228/125153551-527fe200-e109-11eb-8c65-28d2978d2a0d.PNG)
 
-As seen below, this is the list of loans a user has qualified for based on their information and the criteria of the loan.
+Below is the list of loans a user has qualified for based on their information and the criteria of the loan.
 
 ![qualifying_loan_list](https://user-images.githubusercontent.com/84649228/125153556-590e5980-e109-11eb-84d8-adae7a7eaf23.PNG)
 
