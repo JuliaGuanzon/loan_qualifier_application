@@ -41,7 +41,8 @@ This section should include screenshots, code blocks, or animations showing how 
 
 This section should include screenshots, code blocks, or animations explaining how to use your project.
 
-![sdif](entering_borrower_info.PNG)
+![sdif](C:\Users\julia\OneDrive\Desktop\FinTech\Challenges\loan_qualifier_application\loan_qualifier_information\Images\entering_borrower_info.PNG)
+
 ---
 
 ## Contributors
