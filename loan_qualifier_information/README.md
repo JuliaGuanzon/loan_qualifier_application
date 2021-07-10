@@ -104,9 +104,9 @@ The run function runs the application to narrow down the qualifying loans and re
 
 ![run_function](https://user-images.githubusercontent.com/84649228/125153673-48aaae80-e10a-11eb-9a08-e7502b2033c0.PNG)
 
-The saving_qualifying_loans function allows for the saving of the qualifying loan list file. It prompts the user to either save the file or to decline saving the loan list.
+The saving_qualifying_loans function allows for the saving of the qualifying loan list file. It prompts the user to either save the file or to decline saving the loan list. It also provides the file path for the user.
 
-![save_qualifying_loans](https://user-images.githubusercontent.com/84649228/125153674-4b0d0880-e10a-11eb-9616-89be136651ac.PNG)
+![save_qualifying_loans](https://user-images.githubusercontent.com/84649228/125177247-168f6000-e18f-11eb-82e9-b3d6e85e6152.PNG)
 
 The last lines of code, in the image above, allows us to declare the "run" functions and execute it in command-line interface.
 
