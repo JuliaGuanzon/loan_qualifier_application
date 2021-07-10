@@ -10,11 +10,14 @@ In order for this program to run, this application must be used in either Git Ba
 
 There were many libraries used that were imported to help execute the code. They are as follows: sys, fire, questionary, Pathlib.
 
-**Operating Systems**
+
+'''**Operating Systems**
 Git Bash
 Visual Studio Code
 conda 4.10.3
 python 3.7
+
+'''
 
 
 
