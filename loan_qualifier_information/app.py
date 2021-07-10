@@ -132,7 +132,9 @@ def save_qualifying_loans(qualifying_loans):
     csvpath = Path('./data/qualifying_loans.csv')
     header = ["Lender", "Max Loan Amount", "Max LTV", "Max DTI", "Min Credit Score", "Interest Rate"]
     save_csv(csvpath, qualifying_loans, header)
+    print (f"The file is located here: {csvpath}.")
 
+   
 
 if __name__ == "__main__":
     fire.Fire(run)
