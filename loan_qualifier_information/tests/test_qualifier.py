@@ -41,3 +41,14 @@ def test_filters():
 
     # @TODO: Test the new save_csv code!
     # YOUR CODE HERE!
+    bank_data_filtered_credit_score = credit_score.filter_credit_score(750, bank_data)
+    assert len(bank_data_filtered_credit_score) == 15
+
+    bank_data_filtered_max_loan_size = max_loan_size.filter_max_loan_size(210000, bank_data)
+    assert len(bank_data_filtered_max_loan_size) == 18
+
+    bank_data_filtered_debt_ratio = debt_to_income.filter_debt_to_income(0.375, bank_data)
+    assert len(bank_data_filtered_debt_ratio) == 19
+
+    bank_data_filtered_loan_to_value = loan_to_value.filter_loan_to_value(0.84, bank_data)
+    assert len(bank_data_filtered_loan_to_value) == 19
