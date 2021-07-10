@@ -1,30 +1,32 @@
 # Loan Qualifier Application
 
-The loan qualifier application is a helpful tool for people who are looking to apply for a loan. This application is useful to any user as it is an interactive application that gathers qualifying loans for each user's circumstance. The best feature in this program is the user's ability to save the loans they have qualified for in a spreadsheet. It saves the user time by creating a list of loan where the bank's loan criteria is met (ie. Debt to Income, maximum loan to value,minimum credit score). This enhancement to the application will make it efficient and painless for the user to find a loan.
+The loan qualifier application is a helpful tool for people who are looking to apply for a loan. This application is useful to any user as it is an interactive application that gathers qualifying loans for each user's circumstance. The best feature in this program is the user's ability to save the loans they have qualified for in a spreadsheet. It saves the user time by creating a list of loans where the bank's borrowing criteria is met (ie. debt-to-income, loan-to-value, minimum credit score, maximum loan amount) and give the user the ability to keep the list. This enhancement to the application will make it efficient for any user to look for a loan.
 
 ---
 
 ## Technologies
 
-In order for this program to run, this application must be used in either Git Bash or VS Code, as it was written in Python. To run the program, a programmer must have Anaconda/Python installed on their computer. To ensure the code works, please open the file in a dev environment.
+In order for this program to run, this application must be used in either Git Bash or VS Code, as it uses the Python language. To run the program, it is essential to have Anaconda/Python installed. To ensure the code works, please open the file in a dev environment using python.
+
+The operating systems and program versions are mentioned below and are highly recommended when running the program.
 
 **Systems**
 
-conda 4.10.3
+[conda 4.10.3](https://docs.anaconda.com/anaconda/install/index.html) - Package manager, Environment Manager
 
-python 3.7
+python 3.7 - included in Anaconda
 
 **Packages**
 
-* [fire](https://github.com/google/python-fire) - Command line interface, help page, and entry-point.
+[fire](https://github.com/google/python-fire) - Command line interface, help page, and entry-point.
 
-* [questionary](https://github.com/tmbo/questionary) - Interactive user prompts and dialogs
+[questionary](https://github.com/tmbo/questionary) - Interactive user prompts and dialogs
 
 ---
 
 ## Installation Guide
 
-As mentioned above, to ensure that there are no errors when running this application, the user or programmer must use Git Bash or Visual Studio Code to access the application file. The operating systems and program versions are mentioned above and are highly recommended when running the program.
+As mentioned above, to ensure that there are no errors when running this application, the user or programmer must use Git Bash or Visual Studio Code to access the application file. 
 
 Additional installs are needed before running the program.
 
