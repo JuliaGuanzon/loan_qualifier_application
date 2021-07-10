@@ -110,6 +110,12 @@ The saving_qualifying_loans function allows for the saving of the qualifying loa
 
 The last lines of code, in the image above, allows us to declare the "run" functions and execute it in command-line interface.
 
+**Testing**
+To ensure that there are no issues with the code, the application went through testing and debugging in VS Code. The following code was ran and all aspects passed.
+
+![testing debugging](https://user-images.githubusercontent.com/84649228/125177685-ab478d00-e192-11eb-9d7a-5b4c2546697f.PNG)
+
+
 ---
 
 ## Usage
