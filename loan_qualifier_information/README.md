@@ -16,10 +16,9 @@ python 3.7
 
 **Packages**
 
-* [fire](https://github.com/google/python-fire) - For the command line interface, help page, and entry-point.
+* [fire](https://github.com/google/python-fire) - Command line interface, help page, and entry-point.
 
-* [questionary](https://github.com/tmbo/questionary) - For interactive user prompts and dialogs
-
+* [questionary](https://github.com/tmbo/questionary) - Interactive user prompts and dialogs
 
 ---
 
@@ -33,6 +32,7 @@ Additional installs are needed before running the program.
   pip install fire
   pip install questionary
 ```
+
 ---
 
 ## Examples
@@ -147,7 +147,6 @@ explorer qualifying_loans.csv
 Below is the list of loans a user has qualified for based on their information and the criteria of the loan.
 
 ![qualifying_loan_list](https://user-images.githubusercontent.com/84649228/125153556-590e5980-e109-11eb-84d8-adae7a7eaf23.PNG)
-
 
 ---
 
