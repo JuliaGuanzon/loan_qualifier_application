@@ -103,19 +103,6 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     return bank_data_filtered
 
 
-def save_qualifying_loans(qualifying_loans):
-    """Saves the qualifying loans to a CSV file.
-
-    Args:
-        qualifying_loans (list of lists): The qualifying bank loans.
-    """
-    # @TODO: Complete the usability dialog for savings the CSV Files.
-    csvpath = questionary.confirm("Would you like to save?").ask()
-    csvpath = Path('./data/qualifying_loans.csv')
-    header = ["Lender", "Max Loan Amount", "Max LTV", "Max DTI", "Min Credit Score", "Interest Rate"]
-    save_csv(csvpath, qualifying_loans, header)
-
-
 def run():
     """The main function for running the script."""
 
@@ -132,6 +119,19 @@ def run():
 
     # Save qualifying loans
     save_qualifying_loans(qualifying_loans)
+
+
+def save_qualifying_loans(qualifying_loans):
+    """Saves the qualifying loans to a CSV file.
+
+    Args:
+        qualifying_loans (list of lists): The qualifying bank loans.
+    """
+    # @TODO: Complete the usability dialog for savings the CSV Files.
+    csvpath = questionary.confirm("Would you like to save?").ask()
+    csvpath = Path('./data/qualifying_loans.csv')
+    header = ["Lender", "Max Loan Amount", "Max LTV", "Max DTI", "Min Credit Score", "Interest Rate"]
+    save_csv(csvpath, qualifying_loans, header)
 
 
 if __name__ == "__main__":
