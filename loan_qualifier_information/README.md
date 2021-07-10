@@ -10,26 +10,23 @@ In order for this program to run, this application must be used in either Git Ba
 
 There were many libraries used that were imported to help execute the code. They are as follows: sys, fire, questionary, Pathlib.
 
-'''
+```
 **Operating Systems**
-
 Git Bash
-
 Visual Studio Code
-
 conda 4.10.3
-
 python 3.7
-
-'''
-
-
+```
 
 ---
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+As mentioned above, to ensure that there are no errors when running this application, the user or programmer must use Git Bash or Visual Studio Code to access the application file. The operating systems and program versions are mentioned above and are highly recommended when running the program.
+
+Additional installs are needed to access certain libraries.
+
+
 
 ---
 
@@ -47,10 +44,8 @@ This section should include screenshots, code blocks, or animations explaining h
 
 ## Contributors
 
-In this section, list all the people who contribute to this project; since you may want to be reached by recruiters or potential collaborators, include your contact e-mail, and optionally your LinkedIn or Twitter profile.
-
----
+[Julia Guanzon](www.linkedin.com/in/julia-guanzon)
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify others what they can and can not do with your source code and files. Use this section to include the licence you want to use.
+MIT License
