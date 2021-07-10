@@ -158,4 +158,3 @@ Below is the list of loans a user has qualified for based on their information a
 ## License
 
 MIT License
-kjs;lkjsdf;kljd
